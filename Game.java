@@ -62,7 +62,7 @@ public class Game {
 			
 			if(this.gameActive == false){
 				return;
-			}
+			}	
 
 			if(tentativa.length() != Constantes.MAX_CHARS) {
 				throw new IllegalArgumentException("A tentativa tem um numero invalido de caracteres");
@@ -123,6 +123,9 @@ public class Game {
 			Scanner input = new Scanner(System.in);
 			System.out.print("Insira a palavra:");
 			String palavra = input.nextLine();
+			if(palavra.isEmpty()) {
+				throw new NullPointerException("A tentativa não tem nada :|");
+			}
 			return palavra;
 		}
 		
@@ -155,12 +158,3 @@ public class Game {
  * - meto 7 palavras mas a 7 palavra nao vai para a matriz -FIXED
  * - os numeros das estaticas estao por cima de tudo -FIXED 
  */
-	
-		
-		
-		
-		
-		
-		
-		
-	

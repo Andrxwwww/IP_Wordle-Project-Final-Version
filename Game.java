@@ -150,11 +150,3 @@ public class Game {
 			input.close();
 		}
 }
-
-/* BUGS
- * - Como introduzir várias vezes uma string (so consegui criar uma array com strings e introduzir 1 a 1 na grelha) { pode ser com input afinal :] }- FIXED !!! 
- * - Como dar reset à grelha quando tentativas == 6 ou quando acerto na palavra [de forma a não acabar o programa] - FIXED
- * - palavra a advinhar "COMER" / palavra introduzida "BEBER" - convem so aparecer o 2ºe a verde nao a amarelo/verde
- * - meto 7 palavras mas a 7 palavra nao vai para a matriz -FIXED
- * - os numeros das estaticas estao por cima de tudo -FIXED 
- */

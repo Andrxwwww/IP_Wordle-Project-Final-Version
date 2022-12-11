@@ -33,7 +33,6 @@ void RegistaVitoria(int NumTentativas){
     
     
 void RegistaDerrota(){
-	this.Histograma[0] += 1;
 	this.NumJogadas += 1;
     this.NumVitoriasConsecutivas = 0;
 	}
@@ -45,6 +44,7 @@ ColorImage visualizar(){
 
 void visualizarStats(){
 	vis.drawCenteredText(200, 30, "Estatísticas",30, Color.WHITE);
+	
 	createIconStat(vis, 30, 60 ,Color.GREYB,Constantes.ICON_SIZE,30,NumJogadas);
 	createIconStat(vis, 30, 110 ,Color.GREYB,Constantes.ICON_SIZE,30,NumVitorias);
 	createIconStat(vis, 30, 160 ,Color.GREYB,Constantes.ICON_SIZE,30,NumVitoriasConsecutivas);
@@ -57,13 +57,14 @@ void visualizarStats(){
 	createIconStat(vis, 290 , 210 ,Color.GREYB,20,20,Histograma[4]);
 	createIconStat(vis, 290 , 240 ,Color.GREYB,20,20,Histograma[5]);
 
-	vis.drawText(250 , 65 , "Winnings on line ",15, Color.WHITE);
+	vis.drawText(250 , 65 , "Winnings in line ",15, Color.WHITE);
 	vis.drawText(275 , 92 , "1",15, Color.WHITE);
 	vis.drawText(275 , 122 , "2",15, Color.WHITE);
 	vis.drawText(275 , 152 , "3",15, Color.WHITE);
 	vis.drawText(275 , 182 , "4",15, Color.WHITE);
 	vis.drawText(275 , 212 , "5",15, Color.WHITE);
 	vis.drawText(275 , 242 , "6",15, Color.WHITE);
+	
 	vis.drawText(80, 70, "Plays",20, Color.WHITE);
 	vis.drawText(80, 120, "Wins",20, Color.WHITE);
 	vis.drawText(80, 170, "Streak",20, Color.WHITE);

@@ -57,7 +57,7 @@ void visualizarStats(){
 	createIconStat(vis, 290 , 210 ,Color.GREYB,20,20,Histograma[4]);
 	createIconStat(vis, 290 , 240 ,Color.GREYB,20,20,Histograma[5]);
 
-	vis.drawText(250 , 70 , "Winnings on line ",15, Color.WHITE);
+	vis.drawText(250 , 65 , "Winnings on line ",15, Color.WHITE);
 	vis.drawText(275 , 92 , "1",15, Color.WHITE);
 	vis.drawText(275 , 122 , "2",15, Color.WHITE);
 	vis.drawText(275 , 152 , "3",15, Color.WHITE);
@@ -86,10 +86,3 @@ static void createIconStat(ColorImage bg, int w, int h ,Color color,int side, in
 /* ou o utilizador ganha ou perde
  * se ganhar - NumJogadas++ , NumVitorias++ , NumVitoriasConsecutivas++ , histograma[tentativas]++	
  * se perder - Numjogadas++ , vitorias consecutivas = 0 , e histograma[0] = 0 . */
-	
-	/*createIconStat(vis, 280 , 90 ,Color.GREYB,20,20,Histograma[0]);
-	createIconStat(vis, 280 , 120 ,Color.GREYB,20,20,Histograma[1]);
-	createIconStat(vis, 280 , 150 ,Color.GREYB,20,20,Histograma[2]);
-	createIconStat(vis, 280 , 180 ,Color.GREYB,20,20,Histograma[3]);
-	createIconStat(vis, 280 , 210 ,Color.GREYB,20,20,Histograma[4]);
-	createIconStat(vis, 280 , 240 ,Color.GREYB,20,20,Histograma[5]);*/

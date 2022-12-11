@@ -10,11 +10,10 @@ public class Game {
 		final int NUM_LETRAS = 26; 	// Numero de letras do teclado
 		final String DICIONARIO_DEFAULT = "pt_br.txt"; // só uma constante com o nome do ficheiro do dicionario
 		
-		//ColorImage bg; // fornece uma CI  
+		ColorImage bg; // fornece uma CI  
 		Dictionary dicionario;// fornece um dicionario
 		String PalavraPuzzle;// fornece string puzzle
 		
-		ColorImage bg;
 		public Stats stats = new Stats(5); // cria um objeto da classe Stats 
 		final char[][] teclado = Constantes.QWERTY; // teclado
 		char[][] tentativas; //  grelha onde vou meter as letras 
@@ -24,7 +23,6 @@ public class Game {
 		
 		Game(ColorImage bg) // para começar o Game 
 		{
-			//ColorImage bg = new ColorImage(Constantes.DEFAULT_HEIGHT,Constantes.DEFAULT_WIDTH,Constantes.DEFAULT_BG);
 			Dictionary dicionario = new Dictionary(DICIONARIO_DEFAULT);
 			String PalavraPuzzle = dicionario.generateSecretWord(Constantes.MAX_CHARS);
 			
@@ -84,7 +82,7 @@ public class Game {
 			if(tentativa.equals(PalavraPuzzle)) {
 				System.out.println("Acertastes mesmo em cheio :)");
 					render();
-						stats.RegistaVitoria(4);
+						stats.RegistaVitoria(this.LinhaAtual-1);
 						stats.visualizarStats();
 							ReiniciaJogo();
 			}else if(this.LinhaAtual == Constantes.MAX_LINES) {
@@ -159,4 +157,4 @@ public class Game {
  * - palavra a advinhar "COMER" / palavra introduzida "BEBER" - convem so aparecer o 2ºe a verde nao a amarelo/verde
  * - meto 7 palavras mas a 7 palavra nao vai para a matriz -FIXED
  * - os numeros das estaticas estao por cima de tudo -FIXED 
- */	
+ */

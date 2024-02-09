@@ -1,0 +1,1 @@
+![wordle_pic2](https://github.com/Andrxwwww/IP_Wordle-Project-Final-Version/assets/117539407/e3650246-8dd7-4335-8495-b566d8352883)  ![wordle_pic1](https://github.com/Andrxwwww/IP_Wordle-Project-Final-Version/assets/117539407/cf3a9726-7f9f-47a5-8607-807892ab99f6)
